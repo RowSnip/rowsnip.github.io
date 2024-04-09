@@ -5,5 +5,98 @@ html{
 body{
     font-family: "Bebas Neue", sans-serif;
     font-weight: 400;
-    font-style: normal
+    font-style: normal;
+    color:white;
+    background: linear-gradient(rgb(0, 0, 0), rgb(100, 0, 0));
+    text-align: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 400px;
+    border-radius: 5px;
+    margin: 20px;
+}
+.logo img{
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.sections{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    list-style-type: none;
+}
+.navsec{
+    color: white;
+    text-decoration: none;
+}
+.shop{
+    display: flex;
+    justify-content: space-between;
+}
+.shop a{
+    color: white;
+    text-decoration: none;
+}
+.shop img{
+    width: 100px;
+    height: auto;
+    border-radius: 20px;
+    object-fit: cover;
+}
+header{
+    display: flex;
+    background-image: url("assets/zombieheader.jpg");
+    width: 100%;
+    height: 400px;
+    background-position: top;
+    align-items: center;
+    border-radius: 3px;
+    font-size: 2em;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+.card-weapons{
+ background-color: rgb(50, 4, 4);
+ border-radius: 10px;
+ height: 400px;
+ width: 190px;
+}
+.card-weapons img{
+    width: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    background-color: rgb(48, 25, 25);
+    margin: 5px;
+}
+a.button.primary{
+    display: flex;
+    margin: 10px;
+    vertical-align: bottom;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: 8px 14px;
+    transition: all .3s ease-in-out;
+    color: rgb(255, 255, 255);
+    background-color: rgb(61, 3, 3);
+    border: .5px solid rgb(255, 255, 255);
+ }
+.card-maps{
+    background-color: rgb(68, 43, 43);
+    border-radius: 10px;
+}
+.card-maps img{
+    width: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 5px;
+}
+footer{
+    margin-top: 40px;
 }
