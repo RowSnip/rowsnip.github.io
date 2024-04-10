@@ -6,6 +6,7 @@
     <title>Black Ops Zombie Boutique</title>
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <nav>
@@ -24,7 +25,7 @@
           </li>
         </ul>
         <div class="shop">
-          <a href="https://eu.shop.callofduty.com/collections/zombies">Boutique Zombie</a>
+          <a href="https://eu.shop.callofduty.com/collections/zombies" target="_blank">Boutique Officielle</a>
           <img src="assets\weapon 1920x1080\raygun.jpg" alt="raygun">
         </div>
         </div>
@@ -32,7 +33,7 @@
     <header>
         <div class="head" id="head">
             <p>
-                Le groupe 935 à enfin réussi à rétablir internet pour les derniers survivants, par la suite ce site à été dévelloper afin de favoriser la survie sur la terre. Quand vous acheter une arme ou un équipement il sera automatiquement donné par l'ours en peluche de la boîte mystère. Il faudra d'abord réactiver le courant puis établir la connection au réseau mais si vous lisez ce message vous l'avez probablement déjà fait. Bon courage l'extermination des zombies prendra du temps.
+                Le groupe 935 a enfin réussi à rétablir internet pour les derniers survivants,<br>par la suite ce site a été développer afin de favoriser la survie sur la terre.<br>Quand vous acheter une arme ou un équipement il sera automatiquement donné<br>par l'ours en peluche de la boîte mystère.<br>Il faudra d'abord réactiver le courant puis établir la connexion au réseau<br>mais si vous lisez ce message vous l'avez probablement déjà fait.<br> Bon courage l'extermination des zombies prendra du temps.
                 
             </p>
         </div>
@@ -45,7 +46,7 @@
                 <div class="info">
                     <div class="namepts">
                             <h2>Ray Gun</h2>
-                            <h3>5000pts</h3>
+                            <h3>5000 pts</h3>
                     </div>
                     <p>Le Ray Gun est une arme à énergie sortie science-fiction qui libère de l'énergie, généralement avec un effet destructeur.</p>
                     <a class="button primary" href="">Ajouter au panier</a>
@@ -56,10 +57,10 @@
                 <div class="info">
                     <div class="namepts">
                             <h2>Ray Gun Mark II</h2>
-                            <h3>8000pts</h3>
+                            <h3>8000 pts</h3>
                     </div>
                     <p>Le Ray Gun Mark II à les même propriétés que le Ray Gun à une chose prêt, elle tire des raffales de 3 tirs</p>
-                    <a class="button primary" href="">Ajouter au panier</a>
+                    <a class="button primary" id="coin" href="">Ajouter au panier</a>
                 </div>
             </div>
             <div class="card-weapons">
@@ -67,10 +68,10 @@
                 <div class="info">
                     <div class="namepts">
                             <h2>Thundergun</h2>
-                            <h3>12000pts</h3>
+                            <h3>12000 pts</h3>
                     </div>
                     <p>Le Thundergun est une grande arme en forme de canon qui tire des explosions d'air comprimé incroyablement puissantes.</p>
-                    <a class="button primary" href="">Ajouter au panier</a>
+                    <a class="button primary" id="coin" href="">Ajouter au panier</a>
                 </div>
             </div>
             <div class="card-weapons">
@@ -78,10 +79,10 @@
                 <div class="info">
                     <div class="namepts">
                             <h2>Wunderwaffe</h2>
-                            <h3>10000pts</h3>
+                            <h3>10000 pts</h3>
                     </div>
-                    <p>La Wunderwaffe tir des capsules qui à chaque tir tue le zombie visé et 10 autres à proximité au maximum</p>
-                    <a class="button primary" href="">Ajouter au panier</a>
+                    <p>La Wunderwaffe tir des capsules électrique qui tue le zombie visé à chaque tir et 10 autres à proximité au maximum</p>
+                    <a class="button primary" id="coin" href="">Ajouter au panier</a>
                 </div>
             </div>
             <div class="card-weapons">
@@ -89,10 +90,10 @@
                 <div class="info">
                     <div class="namepts">
                             <h2>Monkey Bomb</h2>
-                            <h3>6000pts</h3>
+                            <h3>6000 pts</h3>
                     </div>
                     <p>Elle attire les zombies tout en jouant un jingle puis explose, les zombies ne vous poursuivent pas pendant son activation.</p>
-                    <a class="button primary" href="">Ajouter au panier</a>
+                    <a class="button primary" id="coin" href="">Ajouter au panier</a>
                 </div>
             </div>
             <div class="card-weapons">
@@ -100,35 +101,40 @@
                 <div class="info">
                     <div class="namepts">
                             <h2>Gersh Device</h2>
-                            <h3>7500pts</h3>
+                            <h3>7500 pts</h3>
                     </div>
                     <p>Le dispositif Gersh peut tuer une horde de zombies sans tracas et donne aux joueurs une courte pause loin des zombies.</p>
-                    <a class="button primary" href="">Ajouter au panier</a>
+                    <a class="button primary" id="coin" href="">Ajouter au panier</a>
                 </div>
             </div>
         </section>
-        <h1 id="avismap">Retour expérience lieux</h1>
+        <h1 id="avismap">Expérience d'Edward Richtofen</h1>
         <section class="maps">
             <div class="card-maps">
-                <img src="assets\map 1920x1080\kinodertoten.jpg" alt="kino">
-                <div class="info">
-                    <div class="map-rate">
+                <div class="left-map">
+                    <img src="assets\map 1920x1080\kinodertoten.jpg" alt="kino">
+                    <div class="info">
+                        <div class="map-rate">
                             <h2>Kino Der Totem</h2>
                             <p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            </p>
+                        </div>
                     </div>
-                    <p></p>
                 </div>
+                <p class="avis">
+                    Kino der Toten, le théâtre maudit où les morts errent parmis les projecteurs et les rideaux déchirés.<br>C'est ici que nos premières confrontations avec l'horreur des zombies ont eu lieu, noous plongeant dans un tourbillon de chaos et de mystère.<br>Mais même au coeur de cet endroit sinistre, nous avont trouvé des indices cruciaux pour percer les secrets de l'Apocalypse.
+                </p>
             </div>
             <div class="card-maps">
+                <div class="left-map">
                 <img src="assets\map 1920x1080\ascencion.jpg" alt="ascension">
-                <div class="info">
-                    <div class="map-rate">
+                    <div class="info">
+                        <div class="map-rate">
                             <h2>Ascension</h2>
                             <p>
                                 <i class="fa-solid fa-star"></i>
@@ -136,15 +142,19 @@
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
-                            <p>
+                            </p>
+                        </div>
                     </div>
-                    <p></p>
                 </div>
+                <p class="avis">
+                    Ascension est une station spatiale  emblématique où la technologie rencontre l'horreur interdimensionnelle. C'est là que nos expériences ont pris une dimension cosmique, révélant les secrets de l'éther. Mais même dans l'espace infini, les ténèbres rôdent, prêtes à engloutir ceux qui osent défier les limites de la réalité.
+                </p>
             </div>
             <div class="card-maps">
-                <img src="assets\map 1920x1080\motd.jpg" alt="motd">
-                <div class="info">
-                    <div class="map-rate">
+                <div class="left-map">
+                    <img src="assets\map 1920x1080\motd.jpg" alt="motd">
+                    <div class="info">
+                        <div class="map-rate">
                             <h2>Mob Of The Dead</h2>
                             <p>
                                 <i class="fa-solid fa-star"></i>
@@ -153,14 +163,18 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-solid fa-star"></i>
                             <p>
+                        </div>
                     </div>
-                    <p></p>
                 </div>
+                <p class="avis">
+                    Mob Of the Dead est une expérience fascinante dans les profondeurs de l'enfer lui même.<br>Cette prison infestée de zombies offre un terrain idéal pour nos recherches.<br>Mais attention, même les âmes les plus endurcies peuvent être prises au piège dans ce labyrinthe infernal...
+                </p>
             </div>
             <div class="card-maps">
-                <img src="assets\map 1920x1080\gorodkrovi.jpg">
-                <div class="info">
-                    <div class="map-rate">
+                <div class="left-map">
+                    <img src="assets\map 1920x1080\gorodkrovi.jpg">
+                    <div class="info">
+                        <div class="map-rate">
                             <h2>Gorod Krovi</h2>
                             <p>
                                 <i class="fa-solid fa-star"></i>
@@ -169,12 +183,15 @@
                                 <i class="fa-solid fa-star"></i>
                                 <i class="fa-regular fa-star"></i>
                             <p>
+                        </div>
                     </div>
-                    <p></p>
                 </div>
+                <p class="avis">
+                    Gorod Krovi est un monde déchiré par la guerre et le chaos. Cette ville en ruines regorge de secrets et de dangers, mais c'est aussi un lieu d'opportunité pour ceux qui cherche à maîtriser le pouvoir des dragons.<br>Méfiez-vous les dragons ne dorment jamais, et chaque coins obscur peut cacher une nouvelle horreur à découvrir.
+                </p>
             </div>
         </section>
     </main>
-    <footer>©Call Of Duty</footer>
+    <footer>©RowSnip</footer>
 </body>
 </html>

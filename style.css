@@ -13,37 +13,54 @@ body{
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 400px;
+    justify-content: space-between;
     border-radius: 5px;
-    margin: 20px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .logo img{
-    width: 100px;
+    width: 200px;
     height: auto;
     object-fit: cover;
     border-radius: 5px;
 }
-.sections{
+ul.sections{
     display: flex;
     justify-content: space-between;
     flex-direction: row;
     list-style-type: none;
 }
+li.section{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-right: 20px;
+}
 .navsec{
     color: white;
     text-decoration: none;
+    font-size: x-large;
+}
+.navsec:hover{
+    color: yellow;
 }
 .shop{
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 .shop a{
     color: white;
     text-decoration: none;
 }
+.shop a:hover{
+        color: yellow;
+}
 .shop img{
-    width: 100px;
+    width: 150px;
     height: auto;
     border-radius: 20px;
     object-fit: cover;
@@ -52,13 +69,25 @@ header{
     display: flex;
     background-image: url("assets/zombieheader.jpg");
     width: 100%;
-    height: 400px;
-    background-position: top;
+    height: 800px;
+    background-position: center;
     align-items: center;
-    border-radius: 3px;
+    border-radius: 10px;
     font-size: 2em;
+    color: rgb(184 173 134);
+    text-shadow: 2px 1px 20px #f77500;
+    text-align: left;
+    text-size-adjust: 60%;
 }
-section{
+.head p{
+    margin-left: 80px;
+    max-width: 60%;
+}
+h1#weapon{
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+section.weapons{
     display: flex;
     justify-content: space-around;
 }
@@ -67,6 +96,21 @@ section{
  border-radius: 10px;
  height: 400px;
  width: 190px;
+ box-shadow: 5px 5px 5px black;
+ transition: all .2s ease-in-out;
+}
+.card-weapons:hover{
+    background: rgb(156, 8, 8);
+    color: #ffffff;
+    border: 2px solid rgb(0, 0, 0);
+    width: 200px;
+    transition: all .2s ease-in-out;
+        h2{
+          color: rgb(7, 192, 192);
+        }
+        p{
+            color: rgb(160, 166, 54);
+        }
 }
 .card-weapons img{
     width: 180px;
@@ -74,6 +118,14 @@ section{
     border-radius: 5px;
     background-color: rgb(48, 25, 25);
     margin: 5px;
+}
+.img-name-rate{
+    display: flex;
+    flex-direction: column;
+}
+.namepts h3{
+    color: YELLOW;
+    font-size: large;
 }
 a.button.primary{
     display: flex;
@@ -87,16 +139,62 @@ a.button.primary{
     background-color: rgb(61, 3, 3);
     border: .5px solid rgb(255, 255, 255);
  }
-.card-maps{
+ .button.primary:hover{
+    background: white;
+    color: #b01010;
+    border: 2px solid #ffffff;
+    transition: all .3s ease-in-out;
+ }
+ h1#avismap{
+    margin-top: 150px;
+    margin-bottom: 60px;
+}
+ section.maps{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+div.card-maps{
     background-color: rgb(68, 43, 43);
     border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    box-shadow: 5px 5px 5px black;
+    height: 400px;
+    text-align: start;
 }
 .card-maps img{
-    width: 200px;
+    width: 384px;
+    height: 216px;
     object-fit: cover;
     border-radius: 10px;
-    margin: 5px;
+    margin: 20px;
+}
+.left-map{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+}
+.left-map h2{
+    color: rgb(27, 26, 11);
+}
+.left-map p{
+    color: yellow;
+}
+.avis{
+    max-width: 50%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+    object-fit: cover;
+    color: burlywood;
+    margin-left: 60px;
 }
 footer{
     margin-top: 40px;
+    text-align: center;
 }
+
